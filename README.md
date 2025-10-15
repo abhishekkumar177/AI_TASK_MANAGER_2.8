@@ -1,78 +1,85 @@
-<<<<<<< HEAD
-<div>
-  <h2>📘 AI-Powered Task Management System</h2>
-  <pre id="readme-content" style="background-color:#f0f0f0; padding:1em; border-radius:8px; overflow-x:auto; white-space:pre-wrap;">
-🚀 Intelligent Task Management System using NLP + ML
+<h1 align="center">🤖 AI-Powered Task Management System</h1>
 
-This project automatically classifies, prioritizes, and assigns tasks to users based on their behavior, deadlines, and workloads.
+<p align="center">
+  <strong>Live Demo:</strong> 
+  <a href="https://aitaskmanager28-bxahukjkzparonrie229uy.streamlit.app/" target="_blank">
+    Click Here 🚀
+  </a>
+</p>
 
-##🧠 Features:
-- Smart Task Assignment using ML and deadline/workload/behavior
-- Dashboard with Task Table, Priority Pie Chart, Performance Graph
-- Model Prediction Accuracy check
-- Manual Task Entry + Edit
-- Auto Assign + Reset Button
-- Summary: Total Tasks & Overdue Tasks
-- Future-Ready: Trello/Jira API Ready
+<p align="center">
+  <em>“Where Artificial Intelligence meets Productivity.”</em><br>
+  An enterprise-level AI-driven platform that intelligently classifies, prioritizes, and assigns tasks using NLP and Machine Learning — designed to supercharge teams with data-driven automation.
+</p>
 
-##🛠️ Technologies Used:
-- Python (Pandas, Streamlit, Matplotlib, Seaborn)
-- Machine Learning (Classification)
-- Data Preprocessing & EDA
-- CSV-Based Simulated Data (Task + User + Model)
+<hr>
 
-##📁 File Structure:
-- `dashboard.py`: Streamlit main dashboard
-- `smart_assigner.py`: ML-based assignment logic
-- `task_classifier.py`: Trained model logic
-- `tasks_cleaned.csv`: Task dataset
-- `user_data.csv`: User behavior/workload data
-- `model_predictions.csv`: Priority prediction results
+<h2>✨ Key Highlights</h2>
+<ul>
+  <li>🧠 <strong>Smart Task Allocation:</strong> Automatically assigns tasks based on workload, deadlines, and behavior analytics.</li>
+  <li>📊 <strong>Interactive Dashboard:</strong> Real-time analytics with priority charts, performance graphs, and summaries.</li>
+  <li>⚙️ <strong>Adaptive ML Model:</strong> Predicts priority levels with continuous learning for enhanced accuracy.</li>
+  <li>📝 <strong>Manual + Automated Control:</strong> Add, edit, or auto-assign tasks seamlessly.</li>
+  <li>🚀 <strong>Future-Ready:</strong> Fully compatible with Trello, Jira, and Slack integrations.</li>
+</ul>
 
-###🖥️ Run Locally:
-1. Clone repo or copy files
-2. Install requirements: `pip install streamlit pandas matplotlib seaborn`
-3. Run: `streamlit run dashboard.py`
+<h2>🛠️ Tech Stack</h2>
+<ul>
+  <li>💻 <strong>Languages & Libraries:</strong> Python, Pandas, Streamlit, Matplotlib, Seaborn</li>
+  <li>🤖 <strong>Machine Learning:</strong> Classification models for intelligent prioritization</li>
+  <li>📈 <strong>Data:</strong> Simulated CSV datasets (Tasks, Users, Model Predictions)</li>
+  <li>🎨 <strong>UI:</strong> Streamlit dashboard with responsive data visualization</li>
+</ul>
 
-📌 Manual Entry Format:
-For `user_data.csv`:
-- Username, CurrentTasks, CompletedTasks, PendingTasks, BehaviourScore
+<h2>📁 Project Structure</h2>
+<ul>
+  <li><code>dashboard.py</code> — Main Streamlit dashboard</li>
+  <li><code>smart_assigner.py</code> — Core ML-based task assignment logic</li>
+  <li><code>task_classifier.py</code> — Trained task classification model</li>
+  <li><code>tasks_cleaned.csv</code> — Task data</li>
+  <li><code>user_data.csv</code> — User performance/workload data</li>
+  <li><code>model_predictions.csv</code> — Model accuracy and predictions</li>
+</ul>
 
-For `tasks_cleaned.csv`:
-- TaskID, Description, Deadline, AssignedTo, Priority, Status
+<h2>🚀 Run Locally</h2>
+<ol>
+  <li>Clone the repository.</li>
+  <li>Install dependencies: <code>pip install streamlit pandas matplotlib seaborn</code></li>
+  <li>Run the app: <code>streamlit run dashboard.py</code></li>
+</ol>
 
-###📊 Dashboard Sections:
-1. Task Assignment Table
-2. Task Priority Distribution
-3. User Performance Tracker
-4. Model Prediction Accuracy
-5. Smart Task Assigner (Auto Assign Button)
-6. Task Editor (Add/Edit)
-7. Summary of Total & Overdue Tasks
+<h2>📊 Dashboard Modules</h2>
+<ul>
+  <li>📋 Task Overview Table</li>
+  <li>🥧 Priority Distribution Chart</li>
+  <li>📈 User Performance Analytics</li>
+  <li>🧩 Model Accuracy Tracker</li>
+  <li>🤖 Smart Task Auto-Assigner</li>
+  <li>✏️ Add/Edit Task Interface</li>
+  <li>🔍 Summary Metrics (Total & Overdue Tasks)</li>
+</ul>
 
-##🖼️ Screenshot:
-(Insert screenshot here showing dashboard)
+<h2>🧩 Data Format</h2>
+<p><strong>user_data.csv:</strong><br>
+<code>Username, CurrentTasks, CompletedTasks, PendingTasks, BehaviourScore</code></p>
 
-🚧 Future Scope:
-- Trello/Jira API integration
-- Notification system
-- Authentication & multi-user support
-- Real-time updates
+<p><strong>tasks_cleaned.csv:</strong><br>
+<code>TaskID, Description, Deadline, AssignedTo, Priority, Status</code></p>
 
-📫 Made with ❤️
-  </pre>
-  <button onclick="copyReadme()" style="margin-top: 10px; padding: 8px 16px; background-color: #4CAF50; color: white; border: none; border-radius: 4px; cursor: pointer;">📋 Copy README</button>
-</div>
+<h2>🚧 Future Enhancements</h2>
+<ul>
+  <li>Integration with Trello, Jira & Slack APIs</li>
+  <li>Smart Notifications via Email/Chatbot</li>
+  <li>Role-based Authentication & Multi-user Login</li>
+  <li>Real-time Cloud Sync & Updates</li>
+</ul>
 
-<script>
-  function copyReadme() {
-    const content = document.getElementById("readme-content").innerText;
-    navigator.clipboard.writeText(content).then(() => {
-      alert("README copied to clipboard!");
-    });
-  }
-</script>
-=======
-### Data-Science-and-ML-Projects
-ENTERPRISE-LEVEL PROJECTS — DATA SCIENCE &amp; MACHINE LEARNING :- All projects here are considered to be under domain of data science and ML
->>>>>>> 46243cd2d488d1f67b1010c11e315228a9e9dad2
+<h2>📜 License</h2>
+<p>
+  Licensed under the <strong>MIT License</strong> — free to use, improve, and deploy.
+</p>
+
+<p align="center">
+  💡 Crafted with precision, powered by AI, and designed for innovation.<br>
+  <strong>Made with ❤️ by Abhijeet Kasera</strong>
+</p>
