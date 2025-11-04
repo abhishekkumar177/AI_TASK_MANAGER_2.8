@@ -115,7 +115,7 @@ T003,High,High,0.88</code></pre>
   <li>Real-time Cloud Sync & Updates</li>
 </ul>
 
-<h2>� Troubleshooting</h2>
+<h2>🐛 Troubleshooting</h2>
 <ul>
   <li><strong>Missing CSV files:</strong> Ensure <code>tasks_cleaned.csv</code>, <code>user_data.csv</code>, and <code>model_predictions.csv</code> are in the project root with correct column headers (see "Data Format").</li>
   <li><strong>Module not found:</strong> Activate your virtual environment and run <code>pip install -r requirements.txt</code>.</li>
@@ -124,7 +124,7 @@ T003,High,High,0.88</code></pre>
   <li><strong>Port already in use:</strong> Stop other services on port 8501 or run <code>streamlit run dashboard.py --server.port 8502</code>.</li>
 </ul>
 
-<h2>�📜 License</h2>
+<h2>📜 License</h2>
 <p>
   Licensed under the <a href="./LICENSE"><strong>MIT License</strong></a> — free to use, improve, and deploy.
 </p>
