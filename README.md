@@ -1,4 +1,8 @@
-<h1 align="center">🤖 AI-Powered Task Management System</h1>
+# 🧠 AI Task Manager 2.8
+
+A Streamlit-based AI Task Management dashboard that classifies, visualizes, and analyzes tasks using machine learning.
+
+--- <h1 align="center">🤖 AI-Powered Task Management System</h1>
 
 <p align="center">
   <strong>Live Demo:</strong> 
@@ -41,12 +45,23 @@
   <li><code>model_predictions.csv</code> — Model accuracy and predictions</li>
 </ul>
 
-<h2>🚀 Run Locally</h2>
-<ol>
-  <li>Clone the repository.</li>
-  <li>Install dependencies: <code>pip install streamlit pandas matplotlib seaborn</code></li>
-  <li>Run the app: <code>streamlit run dashboard.py</code></li>
-</ol>
+## 🚀 Run Locally
+
+```bash
+# Clone this repository
+git clone https://github.com/ABHIJEET-0001/AI_TASK_MANAGER_2.8.git
+cd AI_TASK_MANAGER_2.8
+
+# Create and activate virtual environment
+python -m venv venv
+venv\Scripts\activate      # Windows
+source venv/bin/activate   # macOS/Linux
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run the app
+streamlit run app.py
 
 <h2>📊 Dashboard Modules</h2>
 <ul>
@@ -83,3 +98,4 @@
   💡 Crafted with precision, powered by AI, and designed for innovation.<br>
   <strong>Made with ❤️ by Abhijeet Kasera</strong>
 </p>
+
