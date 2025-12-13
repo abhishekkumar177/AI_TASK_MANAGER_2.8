@@ -6,6 +6,9 @@ import matplotlib.pyplot as plt
 import os
 from datetime import date
 import streamlit.components.v1 as components
+from components.how_it_works import render_how_it_works
+from components.home import render_home
+
 # import google.generativeai as genai
 import textwrap
 import json
@@ -143,52 +146,7 @@ def toggle_expander(name):
 
 # ========== PAGE: HOME ==========
 if selected_page == "🏠 Home":
-    with st.container():
-        st.markdown("<div class='block-style'>", unsafe_allow_html=True)
-
-        col_left, col_right = st.columns([2, 1])
-
-        with col_left:
-            st.markdown("### 🧠 AI Task Manager")
-            st.markdown("#### Smart, AI-powered task tracking for productive teams.")
-            st.write(
-                "Organize tasks, auto-prioritize with AI, track team performance, "
-                "and visualize progress — all in a single interactive dashboard."
-            )
-
-            st.markdown("**What you can do:**")
-            st.markdown(
-                "- ✅ Capture and manage tasks with priorities and due dates\n"
-                "- 🤖 Use AI to understand what is most urgent\n"
-                "- 📊 Track team performance and completion rates\n"
-                "- 🔌 Connect to a backend API for real-time data"
-            )
-
-            if st.button("🚀 Get Started", type="primary"):
-                st.session_state.current_page = "📋 Tasks"
-                st.rerun()
-
-        with col_right:
-            st.markdown(
-                """
-                <div style="
-                    background: radial-gradient(circle at top left, #0072ff22, #dd247622);
-                    border-radius: 18px;
-                    padding: 20px;
-                    border: 1px solid rgba(0,0,0,0.05);
-                    text-align: center;
-                ">
-                    <h4>Quick Snapshot</h4>
-                    <p style="margin-bottom: 6px;">Centralized task management</p>
-                    <p style="margin-bottom: 6px;">AI-assisted prioritization</p>
-                    <p style="margin-bottom: 6px;">Visual performance analytics</p>
-                    <p style="opacity: 0.8; font-size: 13px;">Version 2.8</p>
-                </div>
-                """,
-                unsafe_allow_html=True,
-            )
-
-        st.markdown("</div>", unsafe_allow_html=True)
+    render_home()
 
 
 # ========== PAGES THAT NEED CSV DATA ==========
@@ -212,6 +170,12 @@ if priority_filter != "All" and "Priority" in filtered_tasks_csv.columns:
 
 if status_filter != "All" and "Status" in filtered_tasks_csv.columns:
     filtered_tasks_csv = filtered_tasks_csv[filtered_tasks_csv["Status"] == status_filter]
+
+
+# ========== PAGE: HOW IT WORKS / FEATURES ==========
+elif selected_page == "⚙️ How It Works":
+    render_how_it_works()
+
 
 # ========== PAGE: TASKS (CSV dashboard) ==========
 if selected_page == "📋 Tasks":

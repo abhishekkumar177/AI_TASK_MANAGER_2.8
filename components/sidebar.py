@@ -16,6 +16,7 @@ def sidebar_navigation():
     # ---------- Navigation Menu ----------
     pages = [
         "🏠 Home",
+        "⚙️ How It Works",
         "📋 Tasks",
         "🤖 AI Assistant",
         "📊 Analytics",
