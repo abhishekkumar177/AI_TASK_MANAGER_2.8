@@ -145,9 +145,51 @@ def toggle_expander(name):
 if selected_page == "🏠 Home":
     with st.container():
         st.markdown("<div class='block-style'>", unsafe_allow_html=True)
-        st.subheader("Welcome")
-        st.write("This is the AI Task Manager home page. Use the sidebar to navigate between Tasks, AI Assistant, Analytics, and Settings.")
+
+        col_left, col_right = st.columns([2, 1])
+
+        with col_left:
+            st.markdown("### 🧠 AI Task Manager")
+            st.markdown("#### Smart, AI-powered task tracking for productive teams.")
+            st.write(
+                "Organize tasks, auto-prioritize with AI, track team performance, "
+                "and visualize progress — all in a single interactive dashboard."
+            )
+
+            st.markdown("**What you can do:**")
+            st.markdown(
+                "- ✅ Capture and manage tasks with priorities and due dates\n"
+                "- 🤖 Use AI to understand what is most urgent\n"
+                "- 📊 Track team performance and completion rates\n"
+                "- 🔌 Connect to a backend API for real-time data"
+            )
+
+            if st.button("🚀 Get Started", type="primary"):
+                st.session_state.current_page = "📋 Tasks"
+                st.rerun()
+
+        with col_right:
+            st.markdown(
+                """
+                <div style="
+                    background: radial-gradient(circle at top left, #0072ff22, #dd247622);
+                    border-radius: 18px;
+                    padding: 20px;
+                    border: 1px solid rgba(0,0,0,0.05);
+                    text-align: center;
+                ">
+                    <h4>Quick Snapshot</h4>
+                    <p style="margin-bottom: 6px;">Centralized task management</p>
+                    <p style="margin-bottom: 6px;">AI-assisted prioritization</p>
+                    <p style="margin-bottom: 6px;">Visual performance analytics</p>
+                    <p style="opacity: 0.8; font-size: 13px;">Version 2.8</p>
+                </div>
+                """,
+                unsafe_allow_html=True,
+            )
+
         st.markdown("</div>", unsafe_allow_html=True)
+
 
 # ========== PAGES THAT NEED CSV DATA ==========
 # Preload CSV data once so Tasks / AI / Analytics share it
