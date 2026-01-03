@@ -9,86 +9,95 @@ Welcome! 👋 Whether you’re a beginner, student, or experienced developer, yo
 To maintain code quality and project integrity, please adhere to the following technical requirements:
 
 * **Framework:** Built using **React 19** and **Streamlit**.
-
 * **Styling:** Use **Tailwind CSS** for all new React components.
-
 * **Naming Conventions:**
-
 * `PascalCase` for React components (e.g., `PostCard.jsx`).
-
 * `camelCase` for variables and functions.
 
 
 * **Linting:** You **must** run `npm run lint` and fix all warnings before committing.
-
 * **Code Quality:** Follow Python (PEP8) for backend scripts. Write clean, modular, and documented code.
 
 ---
 
-## 🚦 Workflow
+## 🚀 Getting Started
 
-### 1️⃣ Getting Started
+### 1️⃣ Fork the Repository
 
-1. **Fork & Clone:** Fork the repository and clone it to your local machine.
+Click the **Fork** button at the top-right corner of this page to create your copy of the repo.
 
-2. **Environment:** Copy `.env.example` to `.env` before starting development.
+### 2️⃣ Clone Your Fork
 
-3. **Branching:** Create a descriptive feature branch:
-`git checkout -b feature/your-feature-name`
+```bash
+git clone https://github.com/your-username/AI_TASK_MANAGER_2.8.git
+cd AI_TASK_MANAGER_2.8
 
-### 2️⃣ Respecting Assignments
+```
 
-* **Wait for Assignment:** Wait for an issue to be **officially assigned** to you before starting work or submitting a PR.
+### 3️⃣ Create a New Branch
 
-* **Unsolicited PRs:** Pull Requests for unassigned issues will be closed.
+```bash
+git checkout -b feature/your-feature-name
 
-* **Issue Limit:** Contributors can request a **maximum of 3 issues** per day. More will only be granted once current tasks are completed.
+```
 
-### 3️⃣ Testing & Visuals (Mandatory)
+### 4️⃣ Make Your Changes
 
-* **Issue Reporting:** You **must** provide screenshots of the current state when opening an Issue.
+* **Environment:** Copy `.env.example` to `.env` before starting.
+* Write clean, modular, and documented code.
+* Add docstrings and comments where necessary.
+* Keep your code consistent with the existing structure.
 
-* **PR Submission:** You **must** provide screenshots or GIFs of the new changes in your Pull Request.
+### 5️⃣ Test Your Changes
 
-* **Validation:** Ensure your feature works locally and doesn't break existing functionality.
+* **For Streamlit:** Run `streamlit run app.py` locally.
+* **For React:** Run `npm run dev` and `npm run lint`.
+* Verify that your changes don’t break existing functionality.
+
+### 6️⃣ Commit and Push
+
+We follow the `type(scope): subject` format for commit messages:
+
+* `feat:` A new feature
+* `fix:` A bug fix
+* `docs:` Documentation changes
+
+```bash
+git add .
+git commit -m "feat: added intelligent task sorting"
+git push origin feature/your-feature-name
+
+```
+
+### 7️⃣ Submit a Pull Request
+
+* Go to your forked repo and click **"Compare & pull request"**.
+* **Mandatory:** You **MUST** provide screenshots or GIFs of the new changes in your PR description.
+* Wait for review and feedback from maintainers.
 
 ---
 
-## 📝 Commit Messages
+## 🚦 Workflow & Rules
 
-We follow the `type(scope): subject` format:
-
-* `feat:` A new feature
-
-* `fix:` A bug fix
-
-* `docs:` Documentation changes
-
-* `refactor:` Code changes that neither fix a bug nor add a feature
+* **Respect Assignments:** Wait for an issue to be **officially assigned** to you before starting work. Unsolicited PRs for unassigned issues will be closed.
+* **Issue Limit:** Maximum of **3 issues** assigned at one time.
+* **Visual Requirements:** You **MUST** provide screenshots of the "Area to be Changed" when opening a new Issue.
 
 ---
 
 ## ⏱️ Time Constraints & Disqualification
 
-* **Assignment Window:** Once assigned, work must begin immediately.
-
-* **Standard Deadline:** Tasks should ideally be completed within **30 minutes to 48 hours**.
-
+* **Deadline:** Tasks should ideally be completed within **30 minutes to 48 hours**.
 * **Grace Period:** If no progress is shown after **72 hours**, the issue will be unassigned.
-
-* **Stale PRs:** If you fail to respond to requested changes within **24 hours**, the PR may be closed.
-
-* **Automatic Disqualification:** Submitting a PR that fails the build, ignores linting rules, lacks mandatory screenshots, or duplicates someone else's assigned work will result in immediate disqualification.
+* **Stale PRs:** Failure to respond to requested changes within **24 hours** may result in the PR being closed.
+* **Immediate Disqualification:** Submitting a PR that fails the build, ignores linting rules, lacks mandatory screenshots, or duplicates someone else's work.
 
 ---
 
 ## 🚫 Community Guidelines & Morale
 
-* **Positive Environment:** We maintain a respectful and inclusive space.
-
-* **Morale:** Negative comments on assigned issues that discourage other contributors are strictly prohibited.
-
-* **Harassment:** Discrimination of any kind will result in an immediate ban.
+* **Positive Environment:** No negative comments that decrease morale or discourage other contributors.
+* **Code of Conduct:** Please be respectful and inclusive. Harassment or discrimination of any kind will not be tolerated.
 
 ---
 
@@ -96,10 +105,8 @@ We follow the `type(scope): subject` format:
 
 If you get stuck or have questions:
 
-1. Open a **GitHub Issue** describing your problem.
-
-2. Tag a **maintainer** for assistance.
-
-3. Check for issues labeled `good first issue` if you are new!
+* Open a **GitHub Issue** describing your problem.
+* Tag a **maintainer** for assistance.
+* **Tips:** Start with issues labeled `good first issue`. Don’t worry about perfection—maintainers will guide you!
 
 **Thank you for helping us improve! Together, we’re building a smarter future. 🚀**
