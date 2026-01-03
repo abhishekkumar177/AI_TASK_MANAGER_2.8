@@ -1,4 +1,4 @@
-# 🤝 Contributing to AI Task Manager & College Media
+# 🤝 Contributing to AI Task Manager 2.8
 
 Welcome! 👋 Whether you’re a beginner, student, or experienced developer, your contributions are truly valued. We are building an AI-driven future for task management and media, and we’re excited to have you on board!
 
